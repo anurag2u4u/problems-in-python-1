@@ -1,0 +1,102 @@
+#1.
+"""
+a=int(input("first no."))
+b=int(input("second no."))
+val=a if a>b else b
+print(val)
+"""
+
+#2
+"""
+a=float(input("enter a"))
+b=float(input("enter b"))
+c=float(input("enter c"))
+val=a if a>b and a>c else( b if b>c else c)
+print("maximum",val)
+"""
+
+#3.
+"""
+a=float(input("enter value"))
+val="pos" if a>0 else ("0" if a==0 else "neg")
+print(val)
+"""
+
+#4.
+"""
+a=int(input("enter value"))
+val="is divisible" if a%5==0 and a%11==0 else "not"
+print(val)
+"""
+
+#5.
+"""
+a=int(input("value"))
+val="even" if a%2==0 else "odd"
+print(val)
+"""
+#6
+"""
+a=int(input("year"))
+val="leap year" if a%400==0 else("not" if a%100==0 else("leap year" if a%4==0 else ' '))
+print(val)
+"""                                 
+                            
+#7.
+"""
+a=str(input("enter the character"))
+val="yes" if 64<ord(a)<91 or 96<ord(a)<123 else "no"
+print(val)
+"""
+#8.
+"""
+a=str(input("enter char"))
+vowel=['a','e','i','o','u','A','E','I','O','U']
+val="vowel" if a in vowel and (64<ord(a)<91 or 96<ord(a)<123) else "consonant"
+print(val)
+"""
+#9.
+"""
+a=str(input("enter"))
+k="alphabet" if 64<ord(a)<91 or 96<ord(a)<123 else("number" if 47<ord(a)<58
+                                                   else("sp ch" if 32<ord(a)<48 or 57<ord(a)<65 or 90<ord(a)<97 or 122<ord(a)<127
+                                                        else (" ")))
+print(k)
+"""
+
+#10.
+
+a=int(input("week number"))
+print("mon" if a==1
+      else "t" if a==3
+       else "w" if a==2
+       else "ht" if a==2
+       else "f" if a==2
+else"")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
