@@ -1,0 +1,136 @@
+#1.
+"""
+a=int(input("enter the angle A"))
+b=int(input("enter the angle B"))
+c=int(input("enter the angle C"))
+val=a+b+c
+if val!=180:
+    print("the given triangle is invalid")
+else:
+    print("the tiangle is valid")
+"""
+
+
+#2.
+"""
+a=int(input("enter the length of first side"))
+b=int(input("enter the length of second side"))
+c=int(input("enter the length of third side"))
+if a+b<c or a+c<b or b+c<a:
+    print("the triangle is invalid")
+else:
+    print("the triangle is valid")
+"""
+
+#3.
+"""
+a=int(input("enter the length of first side"))
+b=int(input("enter the length of second side"))
+c=int(input("enter the length of third side"))
+if a==b==c:
+    print("equilateral triangle")
+elif a==b or b==c or a==c:
+    print("isosceles triangle")
+else:
+    print("scalene triangle")
+"""    
+#4.
+"""
+a=float(input("enter the cost price"))
+b=float(input("enter the selling price0"))
+if a>b:
+    print("loss is ",a-b)
+else:        
+    print("profit is",b-a)
+"""
+#5.
+"""
+a=float(input("marks in Physics"))
+b=float(input("marks in chemistry"))
+c=float(input("marks in maths"))
+d=float(input("marks in biology"))
+e=float(input("marks in computer"))
+val=(a+b+c+d+e)/5
+if val>=90:
+    print("grade A")
+elif val>=80:
+    print("grade B")    
+elif val>=70:
+    print("grade C")
+elif val>=60:
+    print("grade D")    
+elif val>=40:
+    print("grade E")
+else:
+    print("grade F")
+"""
+#6.
+"""
+a=int(input("enter the basic salary"))
+if a<=10000:
+    print(2*a)
+elif a<=20000:
+    print(2.15*a)
+else:
+    print(2.25*a)
+"""
+#7.
+"""
+u=float(input("enter units"))
+if u<=50:
+    b=u*0.5
+elif u<=150:
+    b=(50*0.5)+((u-50)*0.75)
+elif u<=250:
+    b=(50*0.5)+(100*0.75)+((u-150)*1.20)
+else:
+    b=(50*0.5)+(100*0.75)+(100*1.20)+((u-250)*1.50) + u*0.2
+print("bill  ",b)
+"""
+
+#8.
+"""
+k=str(input("enter password"))
+l=L=n=c=0
+for x in range(97,122):
+    if chr(x) in k:
+        l=1
+for x in range(65,90):
+    if chr(x) in k:
+        L=1
+for x in range(48,57):
+    if chr(x) in k:
+        n=1
+for x in ['$','#','@']:
+    if x in k:
+        c=1
+if l==L==n==c==1 and 6<=len(k)<=16 :
+    print("good!")
+else:
+    print("bad")
+"""
+#9.
+"""
+a=str(input("enter month"))
+print(" List of months: January, February, March, April, May, June, July, August, September, October, November, December" )
+if a=="January" or a=="March" or a=="May" or a=="July" or a=="August" or a=="October" or a=="December":
+	print("31 days")
+elif a=="April" or a=="June" or a=="September" or a=="November" :
+	print("30 days")
+else:
+	print("28/29 days")
+"""
+#10.
+"""	
+m=int(input("enter month no."))
+d=int(input("enter day no."))
+if 3<=m<=5 and 0<d<31:
+	print("spring")
+elif 6<=m<=8 and 0<d<31 :
+	print("summer")
+elif 9<=m<=11 and 0<d<31:
+	print("autumn")
+elif 12<=m<=2 and 0<d<31:
+	print("winter")
+
+"""
