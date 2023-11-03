@@ -1,0 +1,109 @@
+#1.
+"""
+i=1
+while i<=8:
+    if i<=5:
+        print((5-i)*" ",i*"* ")
+    else:       
+        print((i-4)*" ",(9-i)*"* ")
+    i=i+1
+ """  
+#2.
+"""
+from math import factorial
+n=int(input("input the value of n"))
+i=0
+j=0
+for i in range(0,n):       
+        for j in range(0,i):
+            print(int(factorial(i)/(factorial(i-j)*factorial(j))),end=" ")
+        i=i+1
+        print('1\n')
+"""        
+#3.
+"""
+for i in range(100,400):
+        k=str(i)
+        l=0
+        for j in k:
+                if int(j)%2!=0:
+                        l=1
+                        break
+        if l==0:
+            print(i,end=",")
+"""
+#4.
+for n in range(1,501):
+    g=0
+    for i in range(1,n):
+        k=n%i
+        if (k==0):
+            g=g+i
+    if (g==n):
+        print(n," is perfect ")
+
+#5.
+
+"""
+n=int(input("enter the value of n"))
+for i in range(2,n+1):
+    k=0
+    for j in range(2,i):
+                if i%j==0:
+                    k=1
+                    break
+    if k==0:
+        print(i)
+ """                       
+
+#6.
+"""
+num=s=0
+n=int(input("enter n"))
+for i in range(1,n+1):
+    s=i*(i+1)/2
+    num=num+s
+print(int(num))    
+"""
+#7.
+"""
+from math import exp,factorial
+sum=s=0
+x=float(input("enter the value in radian"))
+n=int(input("enter upto which value of n"))              
+for i in range(0,n):
+    s=(x**i)/factorial(i)
+    sum=sum+s
+print("cal is",sum,"also inbuilt value is",exp(x)) 
+"""
+#8.
+"""
+lst = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele) 
+a=lst[0]
+d=lst[1]-lst[0]
+print(n/2*(2*a+(n-1)*d))
+"""
+#9.
+"""
+a=r=n=0
+lst=[]
+n = int(input("Enter number of elements : "))
+for i in range(0,n):
+    ele = float(input())
+    lst.append(ele) 
+a=lst[0]
+r=lst[1]/lst[0]
+print((a*((r**n)-1))/(r-1))
+"""
+#10.
+"""
+n=int(input("enter the value of n"))
+for i in range(n):
+    k=str(i)
+    if k==k[::-1]:
+        print(k,"is palindrome")
+"""
