@@ -1,0 +1,68 @@
+#1.
+"""
+a1=float(input("enter the value of a1"))
+b1=float(input("enter the value of b1"))
+c1=float(input("enter the value of c1"))
+a2=float(input("enter the value of a2"))
+b2=float(input("enter the value of b2"))
+c2=float(input("enter the value of c2"))
+x=(b2*c1-b1*c2)/(a1*b2-a2*b1)
+y=(a1*c2-c1*a2)/(a1*b2-a2*b1)
+print("value of x :",x,"value of y :",y)
+"""
+#2.
+"""
+from math import sqrt
+a=float(input("enter the value of a"))
+b=float(input("enter the value of b"))
+c=float(input("enter the value of c"))
+if a!=0:
+    val1=complex((-b+sqrt(b**2-4*a*c))/2*a)
+    val2=-b-sqrt(b**2-4*a*c))/2*a
+    print(val1,val2)
+else:
+    print(" a=0 kyu dala")
+ """
+#3.
+"""
+A=float(input("enter the value of A"))
+B=float(input("enter the value of B"))
+C=float(input("enter the value of C"))
+if A+B>C and B+C>A and A+C>B:
+    print("the perimeter of the triangle",A+B+C)
+else:
+    print("the triangle is invalid")
+"""
+#4.
+"""
+a=input("enter the five digit number")
+b=int(a[::-1])
+print(b)
+"""
+#5.
+"""
+from math import factorial as f
+n,r=(int(x) for x in input("enter the value of n,r for nCr").split( ))
+print(f(n)/(f(n-r)*f(r)))
+"""
+#6.
+"""
+x=int(input("enter the value of percentage in result"))
+if x>=75:
+    print("distinction")
+elif x>=60:
+    print("first class")
+elif x>=50:
+    print("second class")
+else:
+    print("fail")
+"""
+#7.
+x1,y1=(int(x) for x in input("enter the value of x1,y1").split())
+x2,y2=(int(x) for x in input("enter the value of x2,y2").split())
+x3,y3=(int(x) for x in input("enter the value of x3,y3").split())
+
+if z==0:
+    print("collinear")
+else:
+    print("not collinear")
