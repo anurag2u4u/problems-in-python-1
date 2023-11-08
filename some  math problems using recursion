@@ -1,0 +1,98 @@
+#7.
+"""
+x1,y1=(int(x) for x in input("enter the value of x1,y1").split())
+x2,y2=(int(x) for x in input("enter the value of x2,y2").split())
+x3,y3=(int(x) for x in input("enter the value of x3,y3").split())
+z=x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2)
+if z==0:
+    print("collinear")
+else:
+    print("not collinear")
+"""
+#8.
+"""
+p,t,i=(float(x) for x in input("enter p,t,i").split())
+if t == 1:
+    premium_rate = 0.0975
+elif t == 2:
+    premium_rate = 0.1625 
+elif t == 3:
+    premium_rate = 0.2450 
+else:
+    print("Invalid")
+premium = p * premium_rate
+print(premium,p,i)
+"""
+#9.
+"""
+for i in range(1,501):
+   sum = 0
+
+   z = i
+   while z > 0:
+       digit = z % 10
+       sum += digit ** 3
+       z //= 10
+
+   if i == sum:
+       print(i)
+"""
+#10
+"""
+r=0
+a,b=(int(x) for x in input("enter a,b").split())
+while r>=0:
+    r=a%b
+    if r==0:
+        print("gcd is",b)
+        break
+    else:
+        temp=b
+        b=r
+        a=temp
+"""
+
+
+#11
+
+"""
+z=1
+sum=0
+for i in range(1,3):
+    z+=z*i
+    sum+=sum+z
+print(sum)
+
+"""
+#12.
+"""
+val=int(input("input range"))
+for n in range(1,val+1):
+    g=0
+    for i in range(1,n):
+        k=n%i
+        if (k==0):
+            g=g+i
+    if (g==n):
+        print(n," is perfect ")
+    elif g>n:
+        print(n," abundant number")
+    else:
+        print(n," deficient number")
+        """
+#13
+x=eval(input("enter xn by ,"))
+y=eval(input("enter yn by ,"))
+n=len(x)
+sxy=0
+sx=0
+sy=0
+sx2=0
+for i in range(n):
+	sxy=sxy+x[i]*y[i]
+	sx=sx+x[i]
+	sy=sy+y[i]
+	sx2=sx2+(x[i])**2
+m=(n*(sxy)-sx*sy)/(n*sx2-(sx)**2)
+c=(1/n)*(sy-m*sx)
+print("line is y={}x+{}".format(m,c))
